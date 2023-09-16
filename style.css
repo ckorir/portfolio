@@ -33,6 +33,7 @@ nav{
     align-items: center;
     position: fixed;
     width: 100vw;
+    z-index: 100;
 }
 nav .links{
     display: flex;
@@ -139,6 +140,7 @@ main .projects .projects-container div{
     padding: 5em;
     width: 15em;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 main .projects .projects-container .proj1, .proj2, .proj3{
