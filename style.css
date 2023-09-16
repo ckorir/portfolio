@@ -114,8 +114,6 @@ main .services{
 main .services .card-container{
     display: flex;
     gap: 1em;
-    
-
 }
 
 main .services .card-container .card{
@@ -123,7 +121,10 @@ main .services .card-container .card{
     border-radius: var(--border-radius);
     box-shadow: 20px 20px 50px 10px rgb(204, 25, 52) inset;
     color: white;
-    padding: 2em 3em;
+    font-size: .9em;
+    width: 48%;
+    margin: auto;
+    padding: 2em 4em;
     margin-top: 2em;
     transition: all 0.5 ease;
 }
