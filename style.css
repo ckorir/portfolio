@@ -162,6 +162,8 @@ main .contact-container{
     background-color: white;
     border-radius: var(--border-radius);
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 5em;
     gap: 7em;
 }
@@ -175,6 +177,20 @@ main .contact-container .img-container img{
     border-radius: 6%;
 }
 
-main .contact-container .form-contact{
-    
+main .contact-container .form-contact form{
+    display: flex;
+    flex-direction: column;
+}
+
+main .contact-container .form-contact h3{
+    margin-bottom: 2em;
+}
+
+main .contact-container .form-contact input, textarea{
+    padding: 1em;
+    max-width: 400px;
+}
+
+main .contact-container .form-contact textarea{
+    resize: none;
 }
