@@ -1,0 +1,22 @@
+/*:root{
+    --main-color: #F4F4F4;
+    --secondary-color: #D42039;
+    --font-primary: rgba(0, 0, 0, 0.72);
+    --font-secondary: #D42039;
+    --border-radius: 30px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--main-color);
+}
+
+nav{
+    background-color: var(--secondary-color);
+} */
