@@ -1,5 +1,6 @@
 const cards = document.querySelectorAll(".card");
 const project = document.querySelectorAll("#proj");
+const submitButton = document.querySelector(".submit");
 
 cards.forEach((card) => {
     card.addEventListener("mouseover", function () {
@@ -24,3 +25,12 @@ project.forEach((proj) => {
         proj.style.transition = "transform .2s ease-in-out";
     })
 })
+
+
+submitButton.addEventListener("mouseenter", function () {
+    submitButton.classList.add("hovered");
+});
+
+submitButton.addEventListener("mouseleave", function () {
+    submitButton.classList.remove("hovered");
+});
