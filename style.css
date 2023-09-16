@@ -1,9 +1,10 @@
-/*:root{
+:root{
     --main-color: #F4F4F4;
     --secondary-color: #D42039;
     --font-primary: rgba(0, 0, 0, 0.72);
     --font-secondary: #D42039;
     --border-radius: 30px;
+    --box-shaddow: drop-shadow(15px 13px 4px rgba(0, 0, 0, 0.04));
 }
 
 *{
@@ -12,11 +13,115 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+a, li{
+    text-decoration: none;
+    list-style: none;
+}
 
 body{
     background-color: var(--main-color);
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
 }
 
 nav{
     background-color: var(--secondary-color);
-} */
+    color: white;
+    display: flex;  
+    padding: 2% 8%;
+    justify-content: end;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+}
+nav .links{
+    display: flex;
+    gap: 4em;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    width: 70%;
+    margin: auto;
+}
+
+main .landing-section{
+    padding-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    height: 40vw;
+}
+
+main .landing-section div{
+    gap: 50em;
+}
+
+main .landing-section .text-container{
+    width: 70%;
+}
+main .landing-section .text-container h3, h2{
+    color: var(--font-secondary);
+    font-family: 'Poppins', sans-serif;
+}
+
+main .landing-section .text-container h3{
+    margin: .5em 0;
+}
+
+main .landing-section .text-container hr{
+    width: 45%;
+    border: 1px solid#D42039;
+}
+
+main .landing-section .text-container p{
+
+    margin-top: 2em;
+    color: var(--font-primary);
+    font-family: 'Poppins', sans-serif;
+}
+
+main .landing-section .img-container img{
+    width: 100%;
+}
+
+/* Services */
+main .services{
+    background-color: white;
+    padding: 3em 3em;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shaddow);
+    text-align: center;
+    box-shadow: 0px 1px 20px rgba(128, 128, 128, 0.377);
+}
+
+main .services .card-container{
+    display: flex;
+    gap: 1em;
+    
+
+}
+
+main .services .card-container .card{
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    box-shadow: 20px 20px 50px 10px rgb(204, 25, 52) inset;
+    color: white;
+    padding: 2em 3em;
+    margin-top: 2em;
+}
+
+main .services .card-container .card i{
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+main .projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+}
