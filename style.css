@@ -10,13 +10,21 @@
 *{
     margin: 0;
     padding: 0;
-    text-decoration: none;
     box-sizing: border-box;
 }
 a, li{
     text-decoration: none;
     list-style: none;
 }
+
+a{
+  color: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 
 body{
     background-color: var(--main-color);
@@ -34,12 +42,18 @@ nav{
     position: fixed;
     width: 100vw;
     z-index: 100;
+
 }
 nav .links{
     display: flex;
     gap: 4em;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
+
+}
+
+nav .links li:hover{
+    transform: translate(5px, -2px);
 }
 
 main{
