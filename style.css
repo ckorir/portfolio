@@ -47,7 +47,7 @@ main{
     margin: auto;
 }
 
-main .landing-section{
+main #landing-section{
     padding-top: 1em;
     display: flex;
     justify-content: center;
@@ -56,35 +56,35 @@ main .landing-section{
     height: 40vw;
 }
 
-main .landing-section div{
+main #landing-section div{
     gap: 50em;
 }
 
-main .landing-section .text-container{
+main #landing-section .text-container{
     width: 70%;
 }
-main .landing-section .text-container h3, h2{
+main #landing-section .text-container h3, h2{
     color: var(--font-secondary);
     font-family: 'Poppins', sans-serif;
 }
 
-main .landing-section .text-container h3{
+main #landing-section .text-container h3{
     margin: .5em 0;
 }
 
-main .landing-section .text-container hr{
+main #landing-section .text-container hr{
     width: 45%;
     border: 1px solid#D42039;
 }
 
-main .landing-section .text-container p{
+main #landing-section .text-container p{
 
     margin-top: 2em;
     color: var(--font-primary);
     font-family: 'Poppins', sans-serif;
 }
 
-main .landing-section .img-container img{
+main #landing-section .img-container img{
     width: 100%;
 }
 
@@ -121,7 +121,7 @@ main .services .card-container .card i{
 }
 
 /* Projects */
-main .projects{
+main #projects{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -129,13 +129,13 @@ main .projects{
     margin-top: 4em;
 }
 
-main .projects .projects-container{
+main #projects .projects-container{
     display: flex;
     gap: 2em;
     margin: 3em;
 }
 
-main .projects .projects-container div{
+main #projects .projects-container div{
     background-color: #D42039;
     padding: 5em;
     width: 15em;
@@ -143,27 +143,27 @@ main .projects .projects-container div{
     cursor: pointer;
 }
 
-main .projects .projects-container .proj1, .proj2, .proj3{
+main #projects .projects-container .proj1, .proj2, .proj3{
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-main .projects .projects-container .proj1{
+main #projects .projects-container .proj1{
     background-image: url('./img/img1.png');
 }
 
-main .projects .projects-container .proj2{
+main #projects .projects-container .proj2{
     background-image: url('./img/img2.png');
 }
 
-main .projects .projects-container .proj3{
+main #projects .projects-container .proj3{
     background-image: url('./img/img3.png');
 }
 
 
 /* Contact Section */
 
-main .contact-container{
+main #contact-container{
     margin-top: 5em;
     background-color: white;
     border-radius: var(--border-radius);
@@ -175,37 +175,37 @@ main .contact-container{
     box-shadow: 0px 1px 20px rgba(128, 128, 128, 0.377);
 }
 
-main .contact-container div{
+main #contact-container div{
     width: 50%;
 }
 
-main .contact-container .img-container img{
+main #contact-container .img-container img{
     width: 100%;
     border-radius: 6%;
 }
 
-main .contact-container .form-contact form{
+main #contact-container .form-contact form{
     display: flex;
     flex-direction: column;
 }
 
-main .contact-container .form-contact h3{
+main #contact-container .form-contact h3{
     margin-bottom: 1em;
 }
 
-main .contact-container .form-contact input, textarea{
+main #contact-container .form-contact input, textarea{
     padding: 1em;
     max-width: 400px;
     border-radius: 5px;
     border: .1px solid ;
 }
 
-main .contact-container .form-contact textarea{
+main #contact-container .form-contact textarea{
     resize: none;
     height: 10em;
 }
 
-main .contact-container .form-contact .submit{
+main #contact-container .form-contact .submit{
     background-color: var(--secondary-color);
     color: white;
 }
