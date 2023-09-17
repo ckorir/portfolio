@@ -1,6 +1,5 @@
+// Added hover effect on Services cards
 const cards = document.querySelectorAll(".card");
-const project = document.querySelectorAll("#proj");
-const submitButton = document.querySelector(".submit");
 
 cards.forEach((card) => {
     card.addEventListener("mouseover", function () {
@@ -14,6 +13,9 @@ cards.forEach((card) => {
     });
 });
 
+// Added hover effect on projects
+const project = document.querySelectorAll("#proj");
+
 project.forEach((proj) => {
     proj.addEventListener("mouseover", function() {
         proj.style.transform = "scale(1.05)";
@@ -26,6 +28,8 @@ project.forEach((proj) => {
     })
 })
 
+// Added hover effect on Button
+const submitButton = document.querySelector(".submit");
 
 submitButton.addEventListener("mouseenter", function () {
     submitButton.classList.add("hovered");
@@ -33,4 +37,19 @@ submitButton.addEventListener("mouseenter", function () {
 
 submitButton.addEventListener("mouseleave", function () {
     submitButton.classList.remove("hovered");
+});
+
+// Added Smooth Scrolling Behaviour
+const navLinks = document.querySelectorAll('nav a[href^="#"]');
+
+navLinks.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const targetId = link.getAttribute('href').slice(1);
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
 });
