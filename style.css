@@ -361,7 +361,9 @@ footer hr{
         height: 15em;
     }
 
-}
-html {
-    scroll-behavior: smooth;
+    footer .contacts{
+        flex-direction: column;
+        line-height: 2.5em;
+    }
+
 }
