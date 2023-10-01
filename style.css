@@ -188,7 +188,7 @@ main #projects .projects-container .proj3{
 main #contact-container{
     margin-top: 5em;
     background: rgb(20, 122, 238);
-    background: linear-gradient(60deg, rgb(185, 198, 218) 0%, rgba(0, 68, 255, 0.966) 100%);
+    background: linear-gradient(60deg, rgb(153, 181, 223) 0%, rgba(0, 68, 255, 0.966) 100%);
     border-radius: var(--border-radius);
     display: flex;
     justify-content: center;
